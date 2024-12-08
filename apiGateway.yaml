@@ -4,12 +4,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: eureka-client
+        - id: eurekaClient
           uri: lb://EUREKA-CLIENT
           predicates:
             - Path=/main/test
             - Method=GET
-        - id: eureka-client-2
+        - id: eurekaClient2
           uri: lb://EUREKA-CLIENT-2
           predicates:
             - Path=/main2/test
